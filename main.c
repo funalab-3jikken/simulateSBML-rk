@@ -1,12 +1,11 @@
-#include <stdio.h>
 #include "sbml/SBMLTypes.h"
+#include <stdio.h>
 
-int main (void)
-{
+int main(void) {
   SBMLDocument_t *d;
   int level, version;
 
-  d = readSBML("mapk.xml");
+  d = readSBML("simple.xml");
   level = SBMLDocument_getLevel(d);
   version = SBMLDocument_getVersion(d);
 
